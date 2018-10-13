@@ -37,3 +37,6 @@ f(T,P,\underline{x})
 # Çengel
 
 $c_p$
+
+$\frac{\partial G}{\partial N_i}_{T,P,N_j}$
+$G=G(T,P,N_1,N_2,...,N_i)$
