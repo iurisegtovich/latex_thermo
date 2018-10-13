@@ -30,3 +30,6 @@ $c_p$
 
 $C_{P,i}^\circ$
 
+f(T,P,\underline{x})
+
+\frac{\partial M}{\partial N_i}_{T,P,N_{j \neq i}}
