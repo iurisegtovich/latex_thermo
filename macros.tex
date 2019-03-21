@@ -12,11 +12,14 @@
 \newcommand{\unitatm}{\mathrm{atm}}
 \newcommand{\unitmol}{\mathrm{mol}}
 \newcommand{\unitJ}{\mathrm{J}}
+\newcommand{\units}{\mathrm{s}}
 \newcommand{\unitm}{\mathrm{m}}
 \newcommand{\unitK}{\mathrm{K}}
 \newcommand{\unitdegC}{\mathrm{^\circ{}C}}
 \newcommand{\unitA}{\textup{\AA}}
 \newcommand{\constkb}{k_\mathrm{B}}
+\newcommand{\consth}{h}
+\newcommand{\constrh}{\hslash}
 \newcommand{\constnav}{N_\mathrm{A}}
 
 \newcommand{\inv}[1]{#1^{-1}}
@@ -35,13 +38,15 @@
 \newcommand{\molar}[2][]{\overline{#2} \vphantom{#2}^{#1}}
 \newcommand{\ext}[1]{#1}
 
-\newcommand{\summ}[2]{\sum\limits_{#1}^{}\roundb{#2}}
-\newcommand{\prodd}[2]{\prod\limits_{#1}^{}\roundb{#2}}
+\newcommand{\summ}[3]{\sum\limits_{#1}^{#2}\roundb{#3}}
+\newcommand{\prodd}[3]{\prod\limits_{#1}^{#2}\roundb{#3}}
+\newcommand{\intt}[4]{\int\limits_{#1}^{#2} {#3} \; #4}
+
 
 \newcommand{\roundb}[1]{\left(#1\right)}
 \newcommand{\squareb}[1]{\left[#1\right]}
 \newcommand{\curlyb}[1]{\left\{#1\right\}}
-\newcommand{\angleb}[1]{\langle#1\rangle}}
+\newcommand{\angleb}[1]{ \left \langle#1 \right \rangle}}
 
 
 
@@ -55,11 +60,17 @@
 \newcommand{\thermoii}[3]{ \left( \frac{\partial ^2 #1}{\partial #2 ^2} \right)_{#3}}
 \newcommand{\thermoij}[4]{ \left( \frac{\partial ^2 #1}{\partial #2 \partial #3} \right)_{#4}}
 
+\newcommand{\thermoiof}[3]{ \left( \frac{\partial }{\partial #2} \roundb{#1} \right)_{#3}}
+\newcommand{\thermoiiof}[3]{ \left( \frac{\partial ^2 }{\partial #2 ^2} \roundb{#1} \right)_{#3}}
+\newcommand{\thermoijof}[4]{ \left( \frac{\partial ^2 }{\partial #2 \partial #3} \roundb{#1} \right)_{#4}}
+
 \newcommand{\thermoiline}[3]{ \left( {\partial #1}/{\partial #2} \right)_{#3}}
 \newcommand{\thermoiiline}[3]{ \left( {\partial ^2 #1}/{\partial #2 ^2} \right)_{#3}}
 \newcommand{\thermoijline}[4]{ \left( {\partial ^2 #1}/{\partial #2 \partial #3} \right)_{#4}}
 
 \newcommand{\asfunction}[2]{#1{\left(#2\right)}}
+
+\newcommand{\lnn}[1]{\ln \roundb{#1}}
 
 \newcommand{\x}{\;}
 \newcommand{\dd}[1]{\mathrm{d}{#1}}
@@ -70,4 +81,3 @@
 %> classical thermodynamics
 \newcommand{\fug}{\hat f}
 \newcommand{\fhi}{\hat \phi}
-
